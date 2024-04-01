@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cadastro Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" action="http://localhost/TCC/submit.php">
+            <h1>CADASTRO</h1>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+            <div class="radio-container">
+                <input type="radio" value="contratar" name="service" id="contratar" required>
+                <label for="contratar"> Contratar serviço </label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" value="prestar" name="service" id="prestar">
+                <label for="prestar"> Prestar serviço </label>
+            </div>
+            <p>
+                <input type="submit" value="Cadastrar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
